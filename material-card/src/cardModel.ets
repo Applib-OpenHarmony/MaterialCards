@@ -1,6 +1,5 @@
 
 /*
->>>>>>> b0fbad399365034a67a794683fda25e0f20490a6
  * Copyright (c) 2022 Application Library Engineering Group.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
