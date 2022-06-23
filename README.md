@@ -169,7 +169,7 @@ build(){
 ```ets
   private filledCard : CardModel = new CardModel('Movie Name','SubHead')
 
-``aboutToAppear() {
+  aboutToAppear() {
     this.filledCard.setMediaIconPosition(MediaIconPosition.Right)
     this.filledCard.setCardHeight(180)
     this.filledCard.setCardWidth(300)
