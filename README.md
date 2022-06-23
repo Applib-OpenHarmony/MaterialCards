@@ -8,6 +8,12 @@ Three cards :
 2. Outlined Card
 3. Elevated Card
 
+## Download & Install
+
+Install using npm
+```c
+npm i ohos-material-checkbox
+```
 # Instructions for use
 
 
