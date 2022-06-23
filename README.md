@@ -1,4 +1,4 @@
-# Material_Cards
+# Material_UI_Cards
 
 Material Card Design. This library can be used to create 3 different types of cards implemented using extended typescript.
 
