@@ -41,7 +41,7 @@ Note : To change the Type of the Card, change cardType. Default is set as 'Norma
 
 ![Sub_Head](screenshots/subHead.png)
 
-##Filled_Card
+## Filled_Card
 
 Code for Complete Filled Card. Set/Change the card default Parameters based on the requirement. 
 
@@ -101,7 +101,7 @@ All the Variables can be reset to their default values by call reset function.
 ```ets
 this.model.reset()
 ```
-##Elevated_Card 
+## Elevated_Card 
 ```c
 private rightImageModel : CardModel = new CardModel('Play Relaxing Songs', 'Song Name')
 
@@ -130,9 +130,9 @@ build() {
 ```
 ![Elevated_Card](screenshots/ElevatedRightImage.png)
 
-##Few More Examples
+## Few More Examples
 
-##Outlined_Card
+## Outlined_Card
 ```ets
   private album : CardModel = new CardModel('Breaking Podcast', 'Size of Song')
   aboutToAppear(){
@@ -158,7 +158,7 @@ build(){
 ![Out_Lined](screenshots/OutIinedCard.png )
 
 
-##Filled_Right_image_Card
+## Filled_Right_image_Card
 
 ```ets
   private filledCard : CardModel = new CardModel('Movie Name','SubHead')
@@ -191,7 +191,7 @@ build(){
 
 ![filledCard](screenshots/filledCardRight.png)
 
-##Compatability
+## Compatability
 
 Supports OpenHarmony API version 8
 
