@@ -12,7 +12,7 @@ Three cards :
 
 Install using npm
 ```c
-npm i ohos-material-checkbox
+npm i ohos-material-cards
 ```
 # Instructions for use
 
