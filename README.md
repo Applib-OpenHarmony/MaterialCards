@@ -41,7 +41,7 @@ Note : To change the Type of the Card, change cardType. Default is set as 'Norma
 
 ![Sub_Head](screenshots/subHead.png)
 
-#Filled_Card
+##Filled_Card
 
 Code for Complete Filled Card. Set/Change the card default Parameters based on the requirement. 
 
@@ -101,7 +101,7 @@ All the Variables can be reset to their default values by call reset function.
 ```ets
 this.model.reset()
 ```
-#Elevated_Card 
+##Elevated_Card 
 ```c
 private rightImageModel : CardModel = new CardModel('Play Relaxing Songs', 'Song Name')
 
@@ -130,9 +130,9 @@ build() {
 ```
 ![Elevated_Card](screenshots/ElevatedRightImage.png)
 
-#Few More Examples
+##Few More Examples
 
-#Outlined_Card
+##Outlined_Card
 ```ets
   private album : CardModel = new CardModel('Breaking Podcast', 'Size of Song')
   aboutToAppear(){
@@ -157,7 +157,8 @@ build(){
 ```
 ![Out_Lined](screenshots/OutIinedCard.png )
 
-#Filled_Right_image_Card
+
+##Filled_Right_image_Card
 
 ```ets
   private filledCard : CardModel = new CardModel('Movie Name','SubHead')
@@ -194,9 +195,17 @@ build(){
 
 Supports OpenHarmony API version 8
 
-##Open Source License
+## Code Contribution
 
-Licensed under Apache-2.0 license
+If you find any problems during usage, you can submit
+an [Issue](https://github.com/Applib-OpenHarmony/Material_Ui_Cards/issues) to us. Of course, we also welcome you to
+send us [PR](https://github.com/Applib-OpenHarmony/Material_Ui_Cards/pulls).
+
+## Open source License
+
+This project is based
+on [Apache License 2.0](https://github.com/Applib-OpenHarmony/Material_Ui_Cards/blob/main/LICENSE), please enjoy and
+participate in open source freely.
 
 ##Reference:
 
