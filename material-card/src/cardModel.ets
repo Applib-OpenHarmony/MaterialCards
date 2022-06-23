@@ -396,12 +396,12 @@ export class CardModel extends Properties {
     this.setShadowColor(Color.Grey)
     this.setShadowRadius(20)
 
-    this.title = ""
+    this.title = "Title"
     this.titleFontSize = 25
     this.titleFontColor = Color.Black
     this.titleFontWeight = FontWeight.Bold
 
-    this.subTitle = ""
+    this.subTitle = "SubTitle"
     this.subTitleFontSize = 15
     this.subTitleFontColor = Color.Black
     this.subTitleFontWeight = FontWeight.Normal
