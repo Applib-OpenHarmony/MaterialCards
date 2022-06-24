@@ -94,6 +94,7 @@ export struct MaterialCard {
             .fontWeight(FontWeight.Bold)
             .fontSize(22)
             .alignSelf(ItemAlign.Start)
+          //list of buttons
           List() {
             ForEach(this.model.getButtons(), (item) => {
               ListItem() {
