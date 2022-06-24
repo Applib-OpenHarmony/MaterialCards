@@ -42,9 +42,6 @@ export namespace button {
       this.buttonHeight = buttonHeight
       this.buttonWidth =buttonWidth
     }
-//    onClick(hi : string) {
-//      console.log(hi)
-//    }
 
     setIsText(isText : boolean){
       this.isText = isText
