@@ -12,7 +12,7 @@ Three cards :
 
 Install using npm
 ```c
-npm i ohos-material-card
+npm i @ohos/material-card
 ```
 # Instructions for use
 
