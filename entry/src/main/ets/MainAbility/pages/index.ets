@@ -28,7 +28,7 @@ struct Index {
   private OnClick(button: button.Model) {
     console.log(button.getButtonText())
   }
-  private cardclick() {
+  private cardClick() {
     console.log("card")
   }
   private Elevated(model: CardModel) {
@@ -60,7 +60,7 @@ struct Index {
     model.setLeadingIconWidth(70)
     model.setButtonClick(this.OnClick)
     model.setActionClick(this.OnClick)
-    model.setCardClick(this.cardclick)
+    model.setCardClick(this.cardClick)
   }
 
   private SubHead(model: CardModel) {
