@@ -25,7 +25,7 @@ struct Index {
   private rightImageFilledCard: CardModel = new CardModel('Movie Name', 'SubHead')
   scroller: Scroller = new Scroller()
 
-  private OnClick(button: button.Model) {
+  private onButtonClick(button: button.Model) {
     console.log(button.getButtonText())
   }
   private onCardClick() {
@@ -58,8 +58,8 @@ struct Index {
     model.setTitleFontSize(25)
     model.setTitleFontWeight(FontWeight.Bolder)
     model.setLeadingIconWidth(70)
-    model.setButtonClick(this.OnClick)
-    model.setActionClick(this.OnClick)
+    model.setButtonClick(this.onButtonClick)
+    model.setActionClick(this.onButtonClick)
     model.setCardClick(this.onCardClick)
   }
 
@@ -104,8 +104,8 @@ struct Index {
     model.setActions([new button.Model('Get Started', false, Color.White, Color.Black, 15, ButtonType.Capsule, 30, 110),
     new button.Model('Song Details', true, Color.Black, Color.Green, 15, ButtonType.Capsule, 30, 110)])
     model.setBorderRadius(4)
-    model.setButtonClick(this.OnClick)
-    model.setActionClick(this.OnClick)
+    model.setButtonClick(this.onButtonClick)
+    model.setActionClick(this.onButtonClick)
   }
 
   private RightImageFilledCard(model: CardModel) {
@@ -123,8 +123,8 @@ struct Index {
     model.setTitleFontColor(Color.White)
     model.setSubTitleFontColor(Color.White)
     model.setCardBackGroundColor('#ffff1ccc')
-    model.setButtonClick(this.OnClick)
-    model.setActionClick(this.OnClick)
+    model.setButtonClick(this.onButtonClick)
+    model.setActionClick(this.onButtonClick)
   }
   aboutToAppear() {
     //Elevated Card

@@ -18,7 +18,6 @@ import { CardModel, CardType, MediaIconPosition } from './cardModel'
 @Component
 export struct MaterialCard {
   @State private model: CardModel = undefined
-  private cardClick : () => void = undefined
 
   build() {
     Column() {
