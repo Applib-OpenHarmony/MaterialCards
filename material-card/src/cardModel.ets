@@ -30,19 +30,19 @@ export enum MediaIconPosition {
 
 class Properties {
   private cardType: CardType = CardType.Normal
-  private cardBorderWidth: number = 2
-  private cardBorderColor: string | Color | ResourceColor = Color.Blue
-  private borderRadius: number = 20
-  private cardBackgroundColor: string | Color | ResourceColor = Color.White
-  private shadowColor: string | Color | ResourceColor = Color.Grey
-  private shadowRadius: number = 20
+  private cardBorderWidth: number | string = "2vp"
+  private cardBorderColor: string | Color | Resource = Color.Blue
+  private borderRadius: number | string = "20vp"
+  private cardBackgroundColor: string | Color | Resource = Color.White
+  private shadowColor: string | Color | Resource = Color.Grey
+  private shadowRadius: number | Resource = 20
 
-  setCardBorderWidth(cardBorderWidth: number): Properties{
+  setCardBorderWidth(cardBorderWidth: number | string): Properties{
     this.cardBorderWidth = cardBorderWidth
     return this
   }
 
-  getCardBorderWidth(): number{
+  getCardBorderWidth(): number | string{
     return this.cardBorderWidth
   }
 
@@ -64,12 +64,12 @@ class Properties {
     return this.cardBorderColor
   }
 
-  setBorderRadius(borderRadius: number) {
-    this.borderRadius = borderRadius != null ? borderRadius : 20
+  setBorderRadius(borderRadius: number | string) {
+    this.borderRadius = borderRadius != null ? borderRadius : "20vp"
     return this
   }
 
-  getBorderRadius(): number {
+  getBorderRadius(): number | string {
     return this.borderRadius
   }
 
@@ -87,45 +87,45 @@ class Properties {
     return this
   }
 
-  getShadowColor() {
+  getShadowColor() : string | Resource | Color {
     return this.shadowColor
   }
 
-  setShadowRadius(shadowRadius: number) {
+  setShadowRadius(shadowRadius: number | Resource ) {
     this.shadowRadius = shadowRadius != null ? shadowRadius : 25
     return this
   }
 
-  getShadowRadius(): number{
+  getShadowRadius(): number | Resource  {
     return this.shadowRadius
   }
 }
 
 export class CardModel extends Properties {
   private title: string | Resource = ""
-  private titleFontSize: number = 25
+  private titleFontSize: number | string = '25fp'
   private titleFontColor: string | Resource | Color = Color.Black
   private titleFontWeight: FontWeight = FontWeight.Bold
 
   private subTitle: string | Resource = ""
-  private subTitleFontSize: number = 15
+  private subTitleFontSize: number | string = "15fp"
   private subTitleFontColor: string | Resource | Color = Color.Black
   private subTitleFontWeight: FontWeight = FontWeight.Normal
 
-  private cardHeight: number = 540
-  private cardWidth: number = 300
+  private cardHeight: number | string = "540vp"
+  private cardWidth: number | string = "300vp"
 
   private leadingIcon: string | Resource = undefined
-  private leadingIconWidth: number = 64
-  private leadingIconHeight: number = 64
+  private leadingIconWidth: number | string = "64vp"
+  private leadingIconHeight: number | string = "64vp"
 
   private mediaIconPosition: MediaIconPosition = MediaIconPosition.Middle
   private mediaIcon: string | Resource = undefined
-  private mediaIconWidth: number = 300
-  private mediaIconHeight: number = 144
+  private mediaIconWidth: number | string = "300vp"
+  private mediaIconHeight: number | string = "144vp"
 
   private supportingText: string | Resource = ""
-  private supportingTextFontSize: number = 15
+  private supportingTextFontSize: number | string = "15fp"
   private supportingTextFontColor: string | Resource | Color = Color.Black
   private supportingTextFontWeight: FontWeight = FontWeight.Medium
 
@@ -145,7 +145,7 @@ export class CardModel extends Properties {
     return this
   }
 
-  getSupportingTextFontSize(): number {
+  getSupportingTextFontSize(): number | string {
     return this.supportingTextFontSize
   }
   setSupportingTextFontColor(supportingTextFontColor: string | Resource | Color): CardModel{
@@ -202,12 +202,12 @@ export class CardModel extends Properties {
     return this.title
   }
 
-  setTitleFontSize(titleFontSize: number) {
+  setTitleFontSize(titleFontSize: number | string) {
     this.titleFontSize = titleFontSize
     return this
   }
 
-  getTitleFontSize(): number{
+  getTitleFontSize(): number | string{
     return this.titleFontSize
   }
 
@@ -233,12 +233,12 @@ export class CardModel extends Properties {
     return this.subTitle
   }
 
-  setSubTitleFontSize(subTitleFontSize: number) {
+  setSubTitleFontSize(subTitleFontSize: number | string) {
     this.subTitleFontSize = subTitleFontSize
     return this
   }
 
-  getSubTitleFontSize(): number{
+  getSubTitleFontSize(): number | string{
     return this.subTitleFontSize
   }
 
@@ -260,21 +260,21 @@ export class CardModel extends Properties {
     return this.subTitleFontWeight
   }
 
-  setCardHeight(cardHeight: number) {
-    this.cardHeight = cardHeight != null ? cardHeight : 540
+  setCardHeight(cardHeight: number | string) {
+    this.cardHeight = cardHeight != null ? cardHeight : "540vp"
     return this
   }
 
-  getCardHeight(): number{
+  getCardHeight(): number | string{
     return this.cardHeight
   }
 
-  setCardWidth(cardWidth: number) {
-    this.cardWidth = cardWidth != null ? cardWidth : 300
+  setCardWidth(cardWidth: number | string) {
+    this.cardWidth = cardWidth != null ? cardWidth : "300vp"
     return this
   }
 
-  getCardWidth(): number{
+  getCardWidth(): number | string{
     return this.cardWidth
   }
 
@@ -287,21 +287,21 @@ export class CardModel extends Properties {
     return this.leadingIcon
   }
 
-  setLeadingIconWidth(leadingIconWidth: number): CardModel{
-    this.leadingIconWidth = leadingIconWidth != null ? leadingIconWidth : 64
+  setLeadingIconWidth(leadingIconWidth: number | string): CardModel{
+    this.leadingIconWidth = leadingIconWidth != null ? leadingIconWidth : "64vp"
     return this
   }
 
-  getLeadingIconWidth(): number{
+  getLeadingIconWidth(): number | string{
     return this.leadingIconWidth
   }
 
-  setLeadingIconHeight(leadingIconHeight: number): CardModel{
-    this.leadingIconHeight = leadingIconHeight != null ? leadingIconHeight : 64
+  setLeadingIconHeight(leadingIconHeight: number | string): CardModel{
+    this.leadingIconHeight = leadingIconHeight != null ? leadingIconHeight : "64vp"
     return this
   }
 
-  getLeadingIconHeight(): number{
+  getLeadingIconHeight(): number | string{
     return this.leadingIconHeight
   }
 
@@ -322,21 +322,21 @@ export class CardModel extends Properties {
     return this.mediaIcon
   }
 
-  setMediaIconWidth(mediaIconWidth: number): CardModel{
+  setMediaIconWidth(mediaIconWidth: number | string): CardModel{
     this.mediaIconWidth = mediaIconWidth != null ? mediaIconWidth : this.cardWidth
     return this
   }
 
-  getMediaIconWidth(): number{
+  getMediaIconWidth(): number | string{
     return this.mediaIconWidth
   }
 
-  setMediaIconHeight(mediaIconHeight: number): CardModel{
-    this.mediaIconHeight = mediaIconHeight != null ? mediaIconHeight : 120
+  setMediaIconHeight(mediaIconHeight: number | string): CardModel{
+    this.mediaIconHeight = mediaIconHeight != null ? mediaIconHeight : "120vp"
     return this
   }
 
-  getMediaIconHeight(): number{
+  getMediaIconHeight(): number | string{
     return this.mediaIconHeight
   }
 
@@ -388,36 +388,39 @@ export class CardModel extends Properties {
 
   reset() : CardModel {
     this.setCardType(CardType.Normal)
-    this.setCardBorderWidth(2)
+    this.setCardBorderWidth("2vp")
     this.setCardBorderColor(Color.Blue)
-    this.setBorderRadius(20)
+    this.setBorderRadius("20vp")
     this.setCardBackGroundColor(Color.White)
     this.setShadowColor(Color.Grey)
     this.setShadowRadius(20)
 
     this.title = "Title"
-    this.titleFontSize = 25
+    this.titleFontSize = "25fp"
     this.titleFontColor = Color.Black
     this.titleFontWeight = FontWeight.Bold
 
     this.subTitle = "SubTitle"
-    this.subTitleFontSize = 15
+    this.subTitleFontSize = "15fp"
     this.subTitleFontColor = Color.Black
     this.subTitleFontWeight = FontWeight.Normal
 
-    this.cardHeight = 540
-    this.cardWidth = 300
+    this.cardHeight = "540vp"
+    this.cardWidth = "300vp"
 
     this.leadingIcon = undefined
-    this.leadingIconWidth = 64
-    this.leadingIconHeight = 64
+    this.leadingIconWidth = "64vp"
+    this.leadingIconHeight = "64vp"
 
     this.mediaIconPosition = MediaIconPosition.Middle
     this.mediaIcon = undefined
-    this.mediaIconWidth = 300
-    this.mediaIconHeight = 144
+    this.mediaIconWidth = "300vp"
+    this.mediaIconHeight = "144vp"
 
     this.supportingText = ""
+    this.subTitleFontSize = "15fp"
+    this.subTitleFontColor = Color.Black
+    this.subTitleFontWeight = FontWeight.Normal
 
     this.showDivider = false
 

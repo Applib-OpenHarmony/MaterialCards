@@ -21,18 +21,18 @@ export namespace button {
     private buttonText  : string = undefined
     private buttonTextColor : string | Resource | Color = Color.White
     private buttonType : ButtonType = ButtonType.Capsule
-    private buttonHeight : number = 90
-    private buttonWidth : number = 30
-    private fontSize : number = 15
+    private buttonHeight : number | string = "90vp"
+    private buttonWidth : number | string = "30vp"
+    private fontSize : number | string = "15fp"
     constructor(
                 buttonText : string ,
                 isText : boolean  = false ,
                 buttonTextColor : string | Resource | Color = Color.White ,
                 buttonColor : string | Resource | Color = Color.Blue,
-                fontSize : number =15 ,
+                fontSize : number ="15fp" ,
                 buttonType: ButtonType =ButtonType.Capsule,
-                buttonHeight :number = 80,
-                buttonWidth : number=30){
+                buttonHeight :number = "80vp",
+                buttonWidth : number= "30vp"){
       this.isText= isText
       this.buttonText = buttonText
       this.buttonTextColor = buttonTextColor
