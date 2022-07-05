@@ -29,10 +29,10 @@ export namespace button {
                 isText : boolean  = false ,
                 buttonTextColor : string | Resource | Color = Color.White ,
                 buttonColor : string | Resource | Color = Color.Blue,
-                fontSize : number ="15fp" ,
+                fontSize : number | string  ="15fp" ,
                 buttonType: ButtonType =ButtonType.Capsule,
-                buttonHeight :number = "80vp",
-                buttonWidth : number= "30vp"){
+                buttonHeight : number | string = "80vp",
+                buttonWidth : number | string= "30vp"){
       this.isText= isText
       this.buttonText = buttonText
       this.buttonTextColor = buttonTextColor
@@ -74,25 +74,25 @@ export namespace button {
     getButtonColor() : string | Resource | Color{
       return this.buttonColor
     }
-    setFontSize(fontSize : number) {
+    setFontSize(fontSize : number | string) {
       this.fontSize = fontSize == null ? 15 : fontSize
       return this
     }
-    getFontSize() : number {
+    getFontSize() : number | string {
       return this.fontSize
     }
-    setButtonHeight(buttonHeight : number){
+    setButtonHeight(buttonHeight : number | string){
       this.buttonHeight = (buttonHeight == null) ? 35 : this.buttonHeight
       return this
     }
-    getButtonHeight() : number {
+    getButtonHeight() : number | string {
       return this.buttonHeight
     }
-    setButtonWidth(buttonWidth : number){
+    setButtonWidth(buttonWidth : number | string){
       this.buttonWidth = (buttonWidth == null) ? 90 : this.buttonWidth
       return this
     }
-    getButtonWidth() : number {
+    getButtonWidth() : number | string {
       return this.buttonWidth
     }
     setButtonType(buttonType : ButtonType){

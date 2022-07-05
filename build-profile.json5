@@ -22,6 +22,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "materialcard",
+      "srcPath": "./materialcard",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
