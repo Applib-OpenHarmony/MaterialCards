@@ -1,11 +1,13 @@
 {
   "name": "@ohos/material-card",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/materialCard.ets",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "a npm package which contains arkUI2.0 page",
+  "ohos": {
+    "org": ""
   },
-  "author": "Chaitanya P",
-  "license": "ISC"
+  "version": "1.0.0",
+  "main": "index.ets",
+  "types": "",
+  "repository": {},
+  "license": "ISC",
+  "dependencies": {}
 }

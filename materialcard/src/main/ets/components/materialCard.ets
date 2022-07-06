@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { CardModel, CardType, MediaIconPosition } from './cardModel'
+import { CardModel, CardType, MediaIconPosition } from './cardmodel'
 
 @Component
 export struct MaterialCard {

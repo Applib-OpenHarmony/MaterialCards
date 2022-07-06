@@ -13,5 +13,6 @@
  * limitations under the License.
  */
 
-// Script for compiling build behavior. It is built in the build plug-in and cannot be modified currently.
-module.exports = require('@ohos/hvigor-ohos-plugin').hapTasks
+export { button } from "./src/main/ets/components/button"
+export { CardModel, CardType, MediaIconPosition } from "./src/main/ets/components/materialCard"
+export {MaterialCard} from "./src/main/ets/components/materialCard"

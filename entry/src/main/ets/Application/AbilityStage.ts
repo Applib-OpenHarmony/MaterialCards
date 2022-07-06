@@ -13,5 +13,10 @@
  * limitations under the License.
  */
 
-// Script for compiling build behavior. It is built in the build plug-in and cannot be modified currently.
-module.exports = require('@ohos/hvigor-ohos-plugin').hapTasks
+import AbilityStage from "@ohos.application.AbilityStage"
+
+export default class MyAbilityStage extends AbilityStage {
+    onCreate() {
+        console.log("[Demo] MyAbilityStage onCreate")
+    }
+}

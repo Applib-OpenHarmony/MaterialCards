@@ -32,14 +32,14 @@ struct Index {
     console.log("card")
   }
   private Elevated(model: CardModel) {
-    model.setButtons([new button.Model('Button1', false, '#ffffffff', '#ff6e00a7', 15, ButtonType.Capsule, 35, 100),
-    new button.Model('Button2', false, '#ffffffff', '#ff6e00a7', 15, ButtonType.Capsule, 35, 100),
-    new button.Model('Button3', false, '#ffffffff', '#ff6e00a7', 15, ButtonType.Capsule, 35, 100),
-    new button.Model('Button4', false, '#ffffffff', '#ff6e00a7', 15, ButtonType.Capsule, 35, 100),
-    new button.Model('Buttn5', false, '#ffffffff', '#ff6e00a7', 15, ButtonType.Capsule, 35, 100)])
-    model.setActions([new button.Model('Action1', false, '#ffffffff', '#ff008061', 15, ButtonType.Capsule, 30, 90),
-    new button.Model('Action2', false, '#ffffffff', '#ff008061', 15, ButtonType.Capsule, 30, 90),
-    new button.Model('Action3', false, '#ffffffff', '#ff008061', 15, ButtonType.Capsule, 30, 90)])
+    model.setButtons([new button.Model('Button1', false, '#ffffffff', '#ff6e00a7', "15fp", ButtonType.Capsule, "35vp", "100vp"),
+    new button.Model('Button2', false, '#ffffffff', '#ff6e00a7', "15fp", ButtonType.Capsule, "35vp", "100vp"),
+    new button.Model('Button3', false, '#ffffffff', '#ff6e00a7', "15fp", ButtonType.Capsule, "35vp", "100vp"),
+    new button.Model('Button4', false, '#ffffffff', '#ff6e00a7', "15fp", ButtonType.Capsule, "35vp", "100vp"),
+    new button.Model('Button5', false, '#ffffffff', '#ff6e00a7', 5, ButtonType.Capsule, "35vp", "100vp")])
+    model.setActions([new button.Model('Action1', false, '#ffffffff', '#ff008061', "15fp", ButtonType.Capsule, "35vp", "100vp"),
+    new button.Model('Action2', false, '#ffffffff', '#ff008061', "15fp", ButtonType.Capsule, "35vp", "100vp"),
+    new button.Model('Action3', false, '#ffffffff', '#ff008061', "15fp", ButtonType.Capsule,"35vp", "100vp")])
     model.setCardBackGroundColor('#f8ffa4a4')
     model.setTitleFontColor(Color.White)
     model.setSubTitleFontColor(Color.White)
