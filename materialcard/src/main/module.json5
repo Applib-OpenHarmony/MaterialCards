@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "materialcard",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet"
+    ],
+    "uiSyntax": "ets"
+  }
+}
