@@ -6,7 +6,7 @@ Three cards :
 
 1. Filled Card (Default)
 2. Outlined Card
-3. Elevated Card
+3. Elevated Card 1
 
 ## Download & Install
 
